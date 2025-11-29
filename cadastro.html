@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Tarefa</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Nova Tarefa</h1>
+            <a href="index.html" class="btn-voltar">Voltar para Lista</a>
+        </header>
+
+        <form id="form-cadastro" class="form-cadastro">
+            <div class="form-group">
+                <label for="prioridade">Prioridade *</label>
+                <select id="prioridade" required>
+                    <option value="">Selecione a prioridade</option>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Urgente">Urgente</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição *</label>
+                <input type="text" id="descricao" required>
+            </div>
+
+            <div class="form-group">
+                <label for="local">Local *</label>
+                <input type="text" id="local" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dataLimite">Data Limite *</label>
+                <input type="datetime-local" id="dataLimite" required>
+            </div>
+
+            <div class="form-group">
+                <label for="matricula">Matrícula *</label>
+                <input type="number" id="matricula" required>
+            </div>
+
+            <div class="form-group">
+                <label>Recursos Necessários (opcional)</label>
+                <div class="recursos-container">
+                    <div class="recurso-input-group">
+                        <input type="text" id="recurso-input" placeholder="Digite um recurso e clique em Adicionar">
+                        <button type="button" id="btn-adicionar-recurso">Adicionar</button>
+                    </div>
+                    <ul id="lista-recursos" class="lista-recursos">
+                    </ul>
+                    <div style="font-size: 12px; color: #666; margin-top: 5px;">
+                        Você pode adicionar quantos recursos quiser
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-salvar">Salvar Tarefa</button>
+                <button type="button" class="btn-cancelar" onclick="window.location.href='index.html'">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script-cadastro.js"></script>
+</body>
+</html>
+

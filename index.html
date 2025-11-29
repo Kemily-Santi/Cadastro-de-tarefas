@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+            <a href="cadastro.html" class="btn-nova-tarefa">Nova Tarefa</a>
+        </header>
+
+        <div id="mensagem-vazia" class="mensagem-vazia" style="display: none;">
+            Nenhuma tarefa cadastrada
+        </div>
+
+        <div id="lista-tarefas">
+            <table id="tabela-tarefas">
+                <thead>
+                    <tr>
+                        <th>Prioridade</th>
+                        <th>Descrição</th>
+                        <th>Local</th>
+                        <th>Recursos Necessários</th>
+                        <th>Data Limite</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-tarefas">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
