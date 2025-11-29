@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    background: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 45px;
+    color: #444;
+}
+
+a.btn-voltar, a.btn-nova-tarefa {
+    text-decoration: none;
+    background: #0077cc;
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: background 0.3s;
+}
+
+a.btn-voltar:hover, a.btn-nova-tarefa:hover {
+    background: #005fa3;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+.recursos-container {
+    margin-top: 0.5rem;
+}
+
+.recurso-input-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.recurso-input-group input {
+    flex: 1;
+}
+
+.recurso-input-group button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background: #0077cc;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.recurso-input-group button:hover {
+    background: #005fa3;
+}
+
+.lista-recursos {
+    margin-top: 0.8rem;
+    list-style: none;
+}
+
+.lista-recursos li {
+    background: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-salvar, .btn-cancelar {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-salvar {
+    background: #0077cc;
+    color: #fff;
+}
+
+.btn-salvar:hover {
+    background: #005fa3;
+}
+
+.btn-cancelar {
+    background: #ccc;
+    color: #333;
+}
+
+.btn-cancelar:hover {
+    background: #999;
+}
+
+.mensagem-vazia {
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+    padding: 1rem;
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+#tabela-tarefas {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#tabela-tarefas thead {
+    background: #0077cc;
+    color: #fff;
+}
+
+#tabela-tarefas th, 
+#tabela-tarefas td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+#tabela-tarefas tbody tr:hover {
+    background: #f5faff;
+}
+
+.prioridade-baixa {
+    background: #eafbea !important;
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.prioridade-normal {
+    background: #fff9e6 !important;
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+.prioridade-urgente {
+    background: #fdeaea !important;
+    color: #e74c3c;
+    font-weight: bold;
+}
