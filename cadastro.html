@@ -15,7 +15,7 @@
         <form id="form-cadastro" class="form-cadastro">
             <div class="form-group">
                 <label for="prioridade">Prioridade *</label>
-                <select id="prioridade" required>
+                <select id="prioridade" >
                     <option value="">Selecione a prioridade</option>
                     <option value="Baixa">Baixa</option>
                     <option value="Normal">Normal</option>
@@ -24,27 +24,27 @@
             </div>
 
             <div class="form-group">
-                <label for="descricao">Descrição *</label>
-                <input type="text" id="descricao" required>
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao">
             </div>
 
             <div class="form-group">
-                <label for="local">Local *</label>
-                <input type="text" id="local" required>
+                <label for="local">Local</label>
+                <input type="text" id="local">
             </div>
 
             <div class="form-group">
-                <label for="dataLimite">Data Limite *</label>
-                <input type="datetime-local" id="dataLimite" required>
+                <label for="dataLimite">Data Limite</label>
+                <input type="date" id="dataLimite">
             </div>
 
             <div class="form-group">
-                <label for="matricula">Matrícula *</label>
-                <input type="number" id="matricula" required>
+                <label for="matricula">Matrícula</label>
+                <input type="number" id="matricula">
             </div>
 
             <div class="form-group">
-                <label>Recursos Necessários (opcional)</label>
+                <label>Recursos Necessários</label>
                 <div class="recursos-container">
                     <div class="recurso-input-group">
                         <input type="text" id="recurso-input" placeholder="Digite um recurso e clique em Adicionar">
@@ -52,9 +52,6 @@
                     </div>
                     <ul id="lista-recursos" class="lista-recursos">
                     </ul>
-                    <div style="font-size: 12px; color: #666; margin-top: 5px;">
-                        Você pode adicionar quantos recursos quiser
-                    </div>
                 </div>
             </div>
 
