@@ -16,11 +16,13 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     background: #fff;
     padding: 50px;
     border-radius: 8px;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -163,7 +165,6 @@ input:focus, select:focus {
     width: 100%;
     border-collapse: collapse;
     border-radius: 6px;
-    overflow: hidden;
 }
 
 #tabela-tarefas thead {
@@ -173,10 +174,10 @@ input:focus, select:focus {
 
 #tabela-tarefas th, 
 #tabela-tarefas td {
-    padding: 0.8rem;
+    padding: 10px;
     text-align: left;
     border-bottom: 1px solid #eee;
-    font-size: 0.95rem;
+    font-size: 12px;
 }
 
 #tabela-tarefas tbody tr:hover {
