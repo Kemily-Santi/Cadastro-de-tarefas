@@ -96,7 +96,6 @@ input:focus, select:focus {
     background: #0077cc;
     color: #fff;
     border-radius: 6px;
-    cursor: pointer;
     transition: background 0.3s;
 }
 
@@ -201,3 +200,4 @@ input:focus, select:focus {
     color: #e74c3c;
     font-weight: bold;
 }
+
